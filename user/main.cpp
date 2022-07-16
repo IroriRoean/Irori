@@ -108,7 +108,7 @@ void Run()
 	not_melon_loader = (String*)il2cpp_string_new(NotMelonLoader.c_str());
 	DetourTransactionBegin();
 	DetourUpdateThread(GetCurrentThread());
-	DetourAttach(&(PVOID&)app::u0A6Cu0A74u0A70u0A66u0A72u0A68u0A71u0A6Eu0A6Fu0A65u0A74_u0A6Au0A6Eu0A68u0A70u0A71u0A65u0A66u0A6Eu0A6Eu0A65u0A70, TryGetModuleHandleHook);
+	DetourAttach(&(PVOID&)app::u0A73u0A66u0A6Au0A6Eu0A6Fu0A6Bu0A6Au0A66u0A6Cu0A6Du0A71_u0A72u0A6Cu0A72u0A6Eu0A74u0A6Au0A73u0A6Fu0A6Au0A6Cu0A6C, TryGetModuleHandleHook);
 	DetourAttach(&(PVOID&)app::File_Exists, File_Exists_Hook);
 	DetourAttach(&(PVOID&)app::Directory_Exists, Directory_Exists_Hook);
 	DetourAttach(&(PVOID&)app::String_Contains, String_Contains_Hook);
